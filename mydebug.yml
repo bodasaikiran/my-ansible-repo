@@ -9,3 +9,13 @@
   - name: i want to see result
     debug:
       msg: "{{myresults}}"
+  - name: install git
+    apt:
+      name: git
+      state: present
+    when: myresults.stderr == "" 
+  - name: install tree
+    apt:
+      name: tree
+      state: present
+    when: myresults.stderr == ""         
