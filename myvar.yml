@@ -1,0 +1,11 @@
+---
+- hosts: 172.31.85.192
+  become: yes
+  vars:
+    myvar1: wgit
+    myvar2: tree
+    myvar3: git
+  tasks:
+  - name: i want to install mywar2
+    debug:
+     msg: "{{myvar2}}"
