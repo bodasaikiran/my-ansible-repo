@@ -3,7 +3,7 @@
 172.31.89.75
 172.31.23.211
 
- [mywedservers:vars]
- var=value
- myubuntuweb=apache2
- myRedHatweb=httpd
+[mywedservers:vars]
+var= value
+myubuntuweb=apache2
+myRedHatweb=httpd
