@@ -4,5 +4,5 @@
 
 [mywedservers:vars]
 var= value
-myubuntuweb=apache2
-myRedHatweb=httpd
+mywebpackonubuntu=apache2
+mywebpackonRedHat=httpd
