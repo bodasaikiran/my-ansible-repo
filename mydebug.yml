@@ -1,0 +1,11 @@
+---
+- hosts: 172.31.85.192
+  become: yes
+  tasks:
+  - name:
+    command: hostname -f
+    register: myresults
+
+  - name: i want to see result
+    debug:
+      msg: "{{myresult}}"
