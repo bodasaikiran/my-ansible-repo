@@ -1,9 +1,14 @@
 ---
-- hosts: 172.31.85.192
+- hosts: mywebservers
   become: yes
   tasks:
   - name: install java on ubuntu nodes
     apt:
-      name: "{{myjavapack}}"
+      name: openjdk-8-jre
       state: present
     when: ansible_os_family == "Debian"
+  - name: install java on RedHat nodes
+    yum:
+      name: java-1.8.0-openjdk
+      state: present
+    when: ansible_os_family == "RedHat"
