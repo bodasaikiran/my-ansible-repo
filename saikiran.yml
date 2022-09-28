@@ -1,0 +1,5 @@
+---
+- hosts: 172.31.89.75
+  become: yes
+  tasks:
+  - import_tasks: myimport.yml
