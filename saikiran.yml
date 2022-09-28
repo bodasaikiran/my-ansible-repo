@@ -6,5 +6,8 @@
   - name: create a folder
     file:
       path: /home/ubuntu/myfolder
-      state: directory 
-     
+      state: directory
+  - name: copy a files
+    copy:
+      src: mycopyfile    
+      dest: /home/ubuntu/mycopyfile.txt
