@@ -15,3 +15,8 @@
     apt:
       name: apache2
       state: present
+
+  - name: create a dynamic file
+    template:
+       src: myjinja.j2
+       dest: /var/www/html/index.html    
