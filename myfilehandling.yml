@@ -2,7 +2,4 @@
 - hosts: 172.31.85.192
   become: yes
   tasks:
-  - name: create a file
-    file:
-     name: /home/ubuntu/
-     state: touch
+  - include_tasks: myincude.yml
