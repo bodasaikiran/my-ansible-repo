@@ -3,3 +3,8 @@
   become: yes
   tasks:
   - import_tasks: myimport.yml
+  - name: create a folder
+    file:
+      path: /home/ubuntu/myfolder
+      state: directory 
+     
